@@ -1,0 +1,219 @@
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/red-hat-display-v21-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/red-hat-display-v21-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Red Hat Display";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/red-hat-display-v21-latin-600.woff2") format("woff2");
+}
+/* lato - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-v25-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/lato-v25-latin-700.woff2") format("woff2");
+}
+/*@use 'vars' as v;
+@use 'mixins' as m; */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #565656;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 2.125rem;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    padding: 0 1.6rem;
+  }
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 5.25rem;
+}
+@media (max-width: 768px) {
+  .flex-container {
+    gap: 20px;
+  }
+}
+
+.header {
+  padding: 2.5rem 0;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 1.5rem 0;
+  }
+}
+.header__nav {
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .header__nav {
+    order: 2;
+    flex-grow: 0;
+  }
+}
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2.8vw;
+  padding: 0 30px;
+}
+@media (max-width: 768px) {
+  .header__menu {
+    position: absolute;
+    right: -100%;
+    top: 65px;
+    opacity: 0;
+    flex-direction: column;
+    background-color: #97cbca;
+    padding: 0 0;
+    transition: all 0.5s;
+    width: 100%;
+    gap: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header__item {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+  }
+}
+.header__link {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 30%;
+  line-height: 1;
+  color: #000000;
+}
+.header__link::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 1px;
+  background-color: #000;
+  bottom: -5px;
+  left: -10px;
+  transform: translateX(-50%);
+  left: 50%;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.header__link:hover::after {
+  opacity: 1;
+}
+.header__icon {
+  display: block;
+  line-height: 0;
+}
+
+.burger {
+  display: none;
+}
+.burger__icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .burger__icon {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 2px;
+    background: #524b4b;
+    cursor: pointer;
+  }
+  .burger__icon::before, .burger__icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #524b4b;
+    left: 0;
+  }
+  .burger__icon::before {
+    top: -10px;
+  }
+  .burger__icon::after {
+    top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .burger:checked ~ .header__menu {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+/*Main*/
+/*Hero-section*//*# sourceMappingURL=main.css.map */

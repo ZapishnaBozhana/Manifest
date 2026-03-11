@@ -1,0 +1,121 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 5.25rem;
+  @include tablet {
+    gap: 20px;
+  }
+}
+.header {
+  padding: 2.5rem 0;
+  @include tablet {
+    padding: 1.5rem 0;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    @include tablet {
+      order: 2;
+      flex-grow: 0;
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2.8vw;
+    padding: 0 30px;
+
+    @include tablet {
+      position: absolute;
+      right: -100%;
+      top: 65px;
+      opacity: 0;
+      flex-direction: column;
+      background-color: #97cbca;
+      padding: 0 0;
+      transition: all 0.5s;
+      width: 100%;
+      gap: 0;
+    }
+  }
+  &__item {
+    @include tablet {
+      padding: 20px 0;
+      border-bottom: 1px solid #fff;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__link {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 30%;
+    line-height: 1;
+    color: $main-color-title;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 1px;
+      background-color: #000;
+      bottom: -5px;
+      left: -10px;
+      transform: translateX(-50%);
+      left: 50%;
+      transition: all 0.4s;
+      opacity: 0;
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  &__icon {
+    display: block;
+    line-height: 0;
+  }
+}
+.burger {
+  display: none;
+
+  &__icon {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: relative;
+      width: 34px;
+      height: 2px;
+      background: #524b4b;
+      cursor: pointer;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #524b4b;
+        left: 0;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+      }
+    }
+  }
+
+  @include tablet {
+    &:checked ~ .header__menu {
+      right: 0;
+      opacity: 1;
+    }
+  }
+}

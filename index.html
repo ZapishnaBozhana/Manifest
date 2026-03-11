@@ -4,25 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="logo">
-          <img src="./assets/images/logo.svg" alt="Company Logo Image" />
+        <div class="flex-container">
+          <div class="logo">
+            <img src="./assets/images/logo.svg" alt="Company Logo Image" />
+          </div>
+          <nav class="header__nav">
+            <input type="checkbox" id="nav-burger" class="nav__burger burger" />
+            <label for="nav-burger" class="burger__icon"></label>
+            <ul class="header__menu">
+              <li class="header__item">
+                <a href="#" class="header__link">home</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">about</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">works</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">blog</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="search">
+            <img
+              class="header__icon"
+              src="./assets/images/search_icon.svg"
+              alt="Search icon"
+            />
+          </div>
         </div>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="menu__item"><a href="#" class="menu__link">home</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">about</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">works</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">blog</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">contact</a></li>
-        </ul>
-      </nav>
-      <div class="search">
-        <img src="./assets/images/search_icon.svg" alt="Search icon" />
       </div>
     </header>
     <main>
@@ -74,10 +93,7 @@
               </a>
             </div>
             <div class="blog__img">
-              <img
-                src="./assets/images/blog_img2.jpg"
-                alt="Windows"
-              />
+              <img src="./assets/images/blog_img2.jpg" alt="Windows" />
             </div>
           </article>
         </div>

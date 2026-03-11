@@ -1,0 +1,46 @@
+/*@use 'vars' as v;
+@use 'mixins' as m; */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: $main-font-family;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  color: $main-color;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+address {
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  @include tablet {
+    padding: 0 2.125rem;
+  }
+  @include mobile {
+    padding: 0 1.6rem;
+  }
+}
