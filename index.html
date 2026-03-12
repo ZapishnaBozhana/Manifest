@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <header class="header">
@@ -47,55 +47,71 @@
     <main>
       <section class="hero__section">
         <div class="container">
-          <h1 class="hero__title"></h1>
+          <h1 class="hero__title">
+            Manifest is a newborn theme. <br />Clean, simple and fast.
+          </h1>
         </div>
       </section>
       <section class="blog__section">
         <div class="container">
           <h2 class="section-title">Blog</h2>
-          <article class="blog__article">
-            <div class="blog__img">
-              <img
-                src="./assets/images/blog_img1.jpg"
-                alt="White arrow points left"
-              />
-            </div>
-            <div class="blog__descript">
-              <h4 class="blog__subtitle">Technology, Interface Design</h4>
-              <h3 class="blog__title">
-                Using UX Design to Build a Sustainable Future
-              </h3>
-              <time datetime="2020-05-06" class="blog__date">6 May, 2020</time>
-              <p class="blog__text">
-                Transformation has to be driven by everybody, not just by
-                climate groups, and we have a responsibility to use our
-                influence to drive this.
-              </p>
-              <a class="blog__link" href="#">
-                <img src="./assets/images/arrow1.svg" alt="Arrow icon" />
-              </a>
-            </div>
-          </article>
-          <article class="blog__article reverse">
-            <div class="blog__descript">
-              <h4 class="blog__subtitle">Technology, Interface Design</h4>
-              <h3 class="blog__title">
-                Using UX Design to Build a Sustainable Future
-              </h3>
-              <time datetime="2020-05-06" class="blog__date">6 May, 2020</time>
-              <p class="blog__text">
-                Transformation has to be driven by everybody, not just by
-                climate groups, and we have a responsibility to use our
-                influence to drive this.
-              </p>
-              <a class="blog__link" href="#">
-                <img src="./assets/images/arrow1.svg" alt="Arrow icon" />
-              </a>
-            </div>
-            <div class="blog__img">
-              <img src="./assets/images/blog_img2.jpg" alt="Windows" />
-            </div>
-          </article>
+          <div class="blog__wraper">
+            <article class="blog__post">
+              <div class="blog-post__img">
+                <img
+                  src="./assets/images/blog_img1.jpg"
+                  alt="White arrow points left"
+                />
+              </div>
+              <div class="blog-post__descript">
+                <div class="blog-post__descr-text">
+                  <h4 class="blog-post__subtitle">
+                    Technology, Interface Design
+                  </h4>
+                  <h3 class="blog-post__title">
+                    Using UX Design to Build a Sustainable Future
+                  </h3>
+                  <time datetime="2020-05-06" class="blog-post__date"
+                    >6 May, 2020</time
+                  >
+                  <p class="blog-post__text">
+                    Transformation has to be driven by everybody, not just by
+                    climate groups, and we have a responsibility to use our
+                    influence to drive this.
+                  </p>
+                  <a class="blog__link" href="#">
+                    <img src="./assets/images/arrow1.svg" alt="Arrow icon" />
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="blog__post">
+              <div class="blog-post__descript">
+                <div class="blog-post__descr-text">
+                  <h4 class="blog-post__subtitle">
+                    Technology, Interface Design
+                  </h4>
+                  <h3 class="blog-post__title">
+                    Using UX Design to Build a Sustainable Future
+                  </h3>
+                  <time datetime="2020-05-06" class="blog-post__date"
+                    >6 May, 2020</time
+                  >
+                  <p class="blog-post__text">
+                    Transformation has to be driven by everybody, not just by
+                    climate groups, and we have a responsibility to use our
+                    influence to drive this.
+                  </p>
+                  <a class="blog__link" href="#">
+                    <img src="./assets/images/arrow1.svg" alt="Arrow icon" />
+                  </a>
+                </div>
+              </div>
+              <div class="blog-post__img">
+                <img src="./assets/images/blog_img2.jpg" alt="Windows" />
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
